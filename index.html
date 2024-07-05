@@ -12,36 +12,85 @@
     <div class="container">
 
         <header class="header">
-            <h1>Pavel Li</h1>
+
             <nav class="menu">
                 <ul>
-                  <li><a href="#">Главная</a></li>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Контакты</a></li>
+                    <li><a href="#summary">About me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code">Code example</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
-              </nav>
-            
-            <img class="avatar" src="/avatar.png" width="400" height="400" alt="avatar">
-            
-            <p>Front-end Developer</p>
-        </header>
-        <main>
-            <section>
-                <h2>About Me</h2>
-                <p>I am a passionate web developer with experience in front-end technologies.</p>
-            </section>
+            </nav>
+            <div class="bio">
+                <img class="avatar" src="/avatar.png" width="200" height="200" alt="avatar">
+                <h1>Pavel Liurts</h1>
+                <div class="contacts">
+                    <ul>
+                        <li>
+                            pavel.initialize@gmail.com
+                        </li>
+                        <li>
+                            +375(29)99-99-999
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-            <section>
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p></p>
-        </footer>
+
+
+            <main>
+
+                <section id="summary">
+                    <h2>About me</h2>
+                    <p>My goal is to create efficient web applications by constantly improving my skills and following
+                        the latest
+                        technology trends.</p>
+                </section>
+
+                <section id="education">
+                    <h2>Education</h2>
+                    <p>
+                        Belarusian National Technical University
+                    </p>
+                    <p>
+                        English level: A2
+                    </p>
+                </section>
+
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </section>
+
+                <section id="code">
+                    <h2>Code example</h2>
+                    <pre>
+                        <code>
+                            function nicknameGenerator(name){
+                                if (name.length<4) return "Error: Name too short";
+                                if (name[2].match(/[aeuio]/)) return name.slice(0,4)
+                                return name.slice(0,3)
+                              }
+                        </code>
+                       
+                    </pre>
+
+                </section>
+
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <a href="https://codeinitialize.github.io/rsschool-cv/">Rolling-scopes-school CV
+
+                    </a>
+                </section>
+            </main>
+            <footer>
+                <p></p>
+            </footer>
 
     </div>
 
