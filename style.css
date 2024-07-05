@@ -1,3 +1,5 @@
+/* ----- Start modern css reset ----- */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -70,4 +72,34 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+/* ----- End modern css reset ----- */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+header {
+    
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Styles for main content */
+main {
+    padding: 20px;
+}
+
+/* Styles for footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
