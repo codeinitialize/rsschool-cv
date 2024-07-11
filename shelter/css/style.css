@@ -17,11 +17,15 @@ ul{
     list-style-type: none;
 }
 
+.header{
+    background-image: linear-gradient(45deg, #5B483A, #262425 );
+}
+
 .container {
     max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
-    background-image: linear-gradient(45deg, #5B483A, #262425 );
+    
 }
 
 body{
