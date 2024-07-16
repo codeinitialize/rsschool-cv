@@ -36,6 +36,10 @@ body{
     color: #4C4C4C;
 }
 
+.header{
+    margin-bottom: 90px;
+}
+
 .header__inner{
     display: flex;
     justify-content: space-between;
@@ -45,11 +49,45 @@ body{
 
 .menu__list{
     display: flex;
-    gap: 35px;
+    gap: 0 35px;
     padding-top: 17px;
 }
 
 .menu__item{
     font-size: 15px;
     color: #CDCDCD;
+}
+
+.not_only{
+    margin-bottom: 80px;
+    background-image: linear-gradient(45deg, #5B483A, #262425 );
+}
+
+.not_only__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.not_only__content{
+    flex-basis: 460px;
+}
+.not_only__title{
+    font-family: Georgia;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 1.5;
+    max-width: 310px;
+}
+.not_only__content{
+    margin-bottom: 42px;
+    
+    
+    
+
+
+}
+.not_only__btn{
+
 }
