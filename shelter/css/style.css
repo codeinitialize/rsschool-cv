@@ -115,7 +115,7 @@ body{
 
 .about {
     background: #FFFFFF;
-   
+    margin-bottom: 170px;
 }
 
 .about__inner{
@@ -154,3 +154,48 @@ body{
 
 
 /* ------------  Our Friends section ------------- */
+
+.our_friends {
+    margin-bottom: 100px;
+    
+    
+}
+
+.our_friends__inner {
+   
+}
+.our_friends__title {
+    margin-left: 400px;
+    margin-bottom: 60px;
+    color: #545454;
+    font-weight: 400;
+    font-size: 35px;
+    font-family: Georgia;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+.our_friends__slider{
+    display: flex;
+}
+.our_friends__arrow{
+    max-height: 50px;
+    max-width: 50px;
+}
+.our_friends__items {
+    display: flex;
+    gap: 90px;
+}
+.our_friends__item {
+    text-align: center;
+}
+.our_friends__item-img {
+}
+.our_firends__item-name {
+    color: #545454;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Georgia;
+}
+.our_friends__item-btn {
+}
