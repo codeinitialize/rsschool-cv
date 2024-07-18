@@ -162,7 +162,7 @@ body{
 }
 
 .our_friends__inner {
-   
+   min-height: 697px;
 }
 .our_friends__title {
     margin-left: 400px;
@@ -185,17 +185,45 @@ body{
 .our_friends__items {
     display: flex;
     gap: 90px;
+    margin-bottom: 85px;
+    margin-left: 50px;
 }
 .our_friends__item {
     text-align: center;
 }
 .our_friends__item-img {
+    margin-bottom: 15px;
 }
 .our_firends__item-name {
+    margin-bottom: 30px;
     color: #545454;
     font-weight: 400;
     font-size: 20px;
     font-family: Georgia;
 }
 .our_friends__item-btn {
+    color: #292929;
+    font-size: 17px;
+    font-family: Georgia;
+    font-weight: 400;
+    padding: 15px 50px;
+    border: 1px solid #F1CDB3;
+    border-radius: 100px;
+    display: inline-block;
 }
+
+.our_friends__btn {
+    margin-bottom: 100px;
+    margin-left: 480px;
+    color: #292929;
+    font-size: 17px;
+    font-family: Georgia;
+    font-weight: 400;
+    padding: 15px 50px;
+    border: 1px solid;
+    background-color: #F1CDB3;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+/* ----------- Help section ------------ */
