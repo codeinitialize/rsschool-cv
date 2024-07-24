@@ -1,0 +1,171 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+    
+    
+}
+
+body{
+    font-family: Georgia, Arial;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #4C4C4C;
+    
+}
+
+.header{
+    margin-bottom: 90px;
+    
+   
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    
+    
+}
+
+.menu__list{
+    display: flex;
+    gap: 0 35px;
+    padding-top: 17px;
+    
+}
+
+.menu__item{
+    font-size: 15px;
+    color: #CDCDCD;
+}
+
+/* -------------Our friends ----------------- */
+
+.our_friends {
+    margin-bottom: 90px;
+    
+    
+}
+
+.our_friends__inner {
+   min-height: 697px;
+}
+.our_friends__title {
+    margin-left: 400px;
+    margin-bottom: 60px;
+    color: #545454;
+    font-weight: 400;
+    font-size: 35px;
+    font-family: Georgia;
+    max-width: 400px;
+    line-height: 1.3;
+}
+
+.our_friends__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+.our_friends__item {
+    text-align: center;
+}
+.our_friends__item-img {
+    margin-bottom: 30px;
+}
+.our_firends__item-name {
+    margin-bottom: 30px;
+    color: #545454;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Georgia;
+}
+.our_friends__item-btn {
+    color: #292929;
+    font-size: 17px;
+    font-family: Georgia;
+    font-weight: 400;
+    padding: 15px 50px;
+    border: 1px solid #F1CDB3;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+.our_friends__navigation {
+    margin-top: 90px;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+
+
+
+
+/* ----------- Footer ------------ */
+
+.footer{
+    background-image: linear-gradient(45deg, #5B483A, #262425 );
+
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.footer__inner_contacts{
+    max-width: 280px;
+}
+
+.footer__inner_adress{
+    max-width: 300px;
+}
+
+.footer__inner_title{
+    margin-top: 60px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 35px;
+    font-family: Georgia;
+    max-width: 290px;
+    line-height: 1.3;
+    text-align:left;
+    margin-bottom: 40px;
+    
+}
+
+.footer__inner_text{
+    color: #F1CDB3;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Georgia;
+    line-height: 1.3;
+    margin-bottom: 76px;
+}
+
+.footer__img {
+    margin-top: 40px;
+}
