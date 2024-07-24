@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
@@ -113,55 +113,55 @@
                 </h3>
                 <div class="help__items">
                     <div class="help__item">
-                        <img src="/images/icon-pet-food1.svg" alt="pet-food">
+                        <img class="help__item-img" src="/images/icon-pet-food1.svg" alt="pet-food">
                         <p class="help__item-name">
                             Pet food
                         </p>
                     </div>
                     <div class="help__item">
-                        <img src="/images/icon-transportation2.svg" alt="transportation">
+                        <img class="help__item-img" src="/images/icon-transportation2.svg" alt="transportation">
                         <p class="help__item-name">
                             Transportation
                         </p>
                     </div>
                     <div class="help__item">
-                        <img src="/images/icon-toys3.svg" alt="toys">
+                        <img class="help__item-img" class="help__item-img" src="/images/icon-toys3.svg" alt="toys">
                         <p class="help__item-name">
                             Toys
                         </p>
                     </div>
                     <div class="help__item">
-                        <img src="/images/icon-bowls-and-cups4.svg" alt="bowls-and-cups">
+                        <img class="help__item-img" src="/images/icon-bowls-and-cups4.svg" alt="bowls-and-cups">
                         <p class="help__item-name">
                             Bowls and cups
                         </p>
                     </div>
                     <div class="help__item">
-                        <img src="/images/icon-shampoos5.svg" alt="shampoos">
+                        <img class="help__item-img" src="/images/icon-shampoos5.svg" alt="shampoos">
                         <p class="help__item-name">
                             Shampoos
                         </p>
                     </div>
                     <div class="help__item">
-                        <img src="/images/icon-vitamins6.svg" alt="vitamins">
+                        <img class="help__item-img" src="/images/icon-vitamins6.svg" alt="vitamins">
                         <p class="help__item-name">
                             Vitamins
                         </p>
                     </div>
                     <div class="help__item">
-                        <img src="/images/icon-medicines7.svg" alt="medicines">
+                        <img class="help__item-img" src="/images/icon-medicines7.svg" alt="medicines">
                         <p class="help__item-name">
                             Medicines
                         </p>
                     </div>
                     <div class="help__item">
-                        <img src="/images/icon-collars-leashes8.svg" alt="collars">
+                        <img sclass="help__item-img" src="/images/icon-collars-leashes8.svg" alt="collars">
                         <p class="help__item-name">
                             Collars / leashes
                         </p>
                     </div>
                     <div class="help__item">
-                        <img src="/images/icon-sleeping-area9.svg" alt="sleeping">
+                        <img class="help__item-img" src="/images/icon-sleeping-area9.svg" alt="sleeping">
                         <p class="help__item-name">
                             Sleeping areas
                         </p>
@@ -173,7 +173,10 @@
     <section class="in_addition">
         <div class="container">
             <div class="in_addition__inner">
-                <img src="/images/donation-dog.png" alt="dog">
+                <div class="in_addition__img">
+                    <img src="/images/donation-dog.png" alt="dog">
+                </div>
+                
                 <div class="in_addition__content">
                     <h3 class="in_addition__title">
                         You can also make a donation
@@ -182,7 +185,7 @@
                         Name of the bank / Type of bank account
                     </p>
                     <div class="in_addition__card">
-                        <img src="/images/credit-card.svg" alt="card">
+                        <img class="in_addition__card-img" src="/images/credit-card.svg" alt="card">
                         <p class="in_addition__card-number">
                             8380 2880 8028 8791 7435 
                         </p>
@@ -196,23 +199,29 @@
     </section>
     <footer class="footer">
         <div class="container">
-            <div class="footer__nav">
-                <p>For questions and suggestions</p>
+            <div class="footer__inner">
                 
-                <img src="/images/icon-email.svg" alt="email">
-                <p>email@shelter.com</p>
-                <img src="/images/icon-phone.svg" alt="phone">
-                <p>+13 674 567 75 54</p>
-
-                <p>We are waiting for your visit</p>
-                <img src="/images/icon-marker.png" alt="marker">
-                <p>1 Central Street, Boston (entrance from the store)</p>
-                <img src="/images/icon-marker.png" alt="marker">
-                <p>18 South Park, London </p>
+                <div class="footer__inner_contacts">
+                    <p class="footer__inner_title">For questions and suggestions</p>
+                    <img class="footer__inner_icon" src="/images/icon-email.svg" alt="email">
+                    <p class="footer__inner_text">email@shelter.com</p>
+                    <img class="footer__inner_icon" src="/images/icon-phone.svg" alt="phone">
+                    <p class="footer__inner_text">+13 674 567 75 54</p>
+                </div>
+                
+                <div class="footer__inner_adress">
+                    <p class="footer__inner_title">We are waiting for your visit</p>
+                    <img class="footer__inner_icon" src="/images/icon-marker.png" alt="marker">
+                    <p class="footer__inner_text" >1 Central Street, Boston (entrance from the store)</p>
+                    <img class="footer__inner_icon" src="/images/icon-marker.png" alt="marker">
+                    <p class="footer__inner_text" >18 South Park, London </p>
+                </div>
+                
+                <div class="footer__img">
+                    <img src="/images/footer-puppy.png" alt="puppy">
+                </div>
             </div>
-            <div class="footer__img">
-                <img src="/images/footer-puppy.png" alt="puppy">
-            </div>
+            
         </div>
     </footer>
 </body>
