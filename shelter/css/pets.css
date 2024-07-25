@@ -1,19 +1,21 @@
-html{
+html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: inherit;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
@@ -22,86 +24,135 @@ ul{
     max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
-    
-    
+
+
 }
 
-body{
+body {
     font-family: Georgia, Arial;
     font-weight: 400;
     font-size: 15px;
     line-height: 1.5;
     color: #4C4C4C;
-    
+    scroll-behavior: smooth;
+
+
 }
 
-.header{
-    margin-bottom: 90px;
-    
-   
+.header {
+    margin-bottom: 110px;
+
+
 }
 
-.header__inner{
+.header__inner {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-    
-    
+
+
 }
 
-.menu__list{
+.header__logo_title {
+    color: #545454;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.3;
+    letter-spacing: 2px;
+
+}
+
+.header__logo_text {
+    color: #292929;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.menu__list {
+
     display: flex;
     gap: 0 35px;
     padding-top: 17px;
-    
+
 }
 
-.menu__item{
+.menu__item {
+    color: #545454;
     font-size: 15px;
-    color: #CDCDCD;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu__item:hover {
+    color: #FDDCC4;
+}
+
+.menu__item.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    color: #292929;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    border-bottom: 3px solid #F1CDB3;
+
 }
 
 /* -------------Our friends ----------------- */
 
 .our_friends {
     margin-bottom: 90px;
-    
-    
+
+
 }
 
 .our_friends__inner {
-   min-height: 697px;
+    min-height: 697px;
 }
+
 .our_friends__title {
     margin-left: 400px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     color: #545454;
     font-weight: 400;
     font-size: 35px;
     font-family: Georgia;
     max-width: 400px;
-    line-height: 1.3;
+    line-height: 1.4;
+    text-align: center;
 }
 
 .our_friends__items {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    
+    margin-bottom: 110px;
 }
+
 .our_friends__item {
     text-align: center;
 }
+
 .our_friends__item-img {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
+
 .our_firends__item-name {
     margin-bottom: 30px;
     color: #545454;
     font-weight: 400;
     font-size: 20px;
     font-family: Georgia;
+    margin-bottom: 20px;
 }
+
 .our_friends__item-btn {
     color: #292929;
     font-size: 17px;
@@ -114,9 +165,9 @@ body{
 }
 
 .our_friends__navigation {
-    margin-top: 90px;
+    margin-top: 1px;
     display: flex;
-    gap:20px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -125,26 +176,26 @@ body{
 
 /* ----------- Footer ------------ */
 
-.footer{
-    background-image: linear-gradient(45deg, #5B483A, #262425 );
+.footer {
+    background-image: linear-gradient(45deg, #5B483A, #262425);
 
 }
 
-.footer__inner{
+.footer__inner {
     display: flex;
     justify-content: space-between;
-   
+
 }
 
-.footer__inner_contacts{
+.footer__inner_contacts {
     max-width: 280px;
 }
 
-.footer__inner_adress{
+.footer__inner_adress {
     max-width: 300px;
 }
 
-.footer__inner_title{
+.footer__inner_title {
     margin-top: 60px;
     color: #FFFFFF;
     font-weight: 400;
@@ -152,12 +203,12 @@ body{
     font-family: Georgia;
     max-width: 290px;
     line-height: 1.3;
-    text-align:left;
+    text-align: left;
     margin-bottom: 40px;
-    
+
 }
 
-.footer__inner_text{
+.footer__inner_text {
     color: #F1CDB3;
     font-weight: 400;
     font-size: 20px;
@@ -168,4 +219,25 @@ body{
 
 .footer__img {
     margin-top: 40px;
+}
+
+.contacts__mail {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts__phone {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts__adress1 {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts__adress2 {
+    display: flex;
+    gap: 20px;
+
 }
