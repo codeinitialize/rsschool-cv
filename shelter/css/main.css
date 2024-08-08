@@ -530,33 +530,34 @@ body {
     .header {
         margin-bottom: 60px;
     }
-   
-    .menu__list{
-    margin-right: 25px;
-   }
 
-   .not_only__inner {
-    flex-wrap: wrap;
-    margin-left: 120px;
-   }
-
-   .not_only__content {
-    flex-basis: 460px;
-   }
-    .not_only__btn {
-     margin-left: 130px;
+    .menu__list {
+        margin-right: 25px;
     }
 
-    
+    .not_only__inner {
+        flex-wrap: wrap;
+        margin-left: 120px;
+    }
+
+    .not_only__content {
+        flex-basis: 460px;
+    }
+
+    .not_only__btn {
+        margin-left: 130px;
+    }
+
+
     img {
         max-width: 96%;
-      }
+    }
 
 
     .about__inner {
         flex-wrap: wrap;
         margin-left: 140px;
-    
+
     }
 
     .about__img {
@@ -575,28 +576,28 @@ body {
 
     .our_friends__items {
         gap: 50px;
-    
+
     }
 
     .our_friends__arrow.right {
         margin-right: 20px;
-    
+
     }
 
     .our_friends__item-img {
         max-width: 96%;
-    
+
     }
 
     .our_firends__item-name {
-        margin-top:10px;
-       
+        margin-top: 10px;
+
     }
 
     .our_friends__btn {
         margin-bottom: 110px;
         margin-left: 230px;
-        
+
     }
 
     .help {
@@ -615,7 +616,7 @@ body {
 
     .in_addition {
         margin-bottom: 140px;
-    
+
     }
 
     .in_addition__inner {
@@ -623,27 +624,31 @@ body {
 
     }
 
-  
+
     .in_addition__img {
         order: 1;
     }
+
     .in_addition__content {
         margin-left: 160px;
     }
+
     .in_addition__img {
         margin-top: 60px;
         margin-left: 110px;
-        
+
     }
+
     .footer__inner {
         flex-wrap: wrap;
         margin-left: 30px;
 
     }
+
     .footer__img {
         margin-left: 180px;
     }
-    
+
 }
 
 @media (max-width: 320px) {
@@ -655,17 +660,18 @@ body {
         height: 35px;
         cursor: pointer;
         transition: transform 0.3s;
-        
+
     }
+
     .line {
         width: 100%;
         height: 3px;
         background-color: #F1CDB3;
         margin: 3px 0;
         transition: transform 0.3s, opacity 0.3s;
-      }
+    }
 
-    .menu__list{
+    .menu__list {
         display: none;
     }
 
@@ -674,14 +680,14 @@ body {
         flex-wrap: wrap;
         margin-left: 5px;
 
-       }
-   
+    }
+
     .not_only__title {
         margin-bottom: 42px;
         font-size: 25px;
         line-height: 1.3;
         max-width: 180px;
-        text-align:center;
+        text-align: center;
         margin-left: 40px;
     }
 
@@ -692,36 +698,40 @@ body {
         font-size: 15px;
         color: #CDCDCD;
         max-width: 300px;
-        text-align:start;
+        text-align: start;
         margin-bottom: 20px;
     }
 
     .not_only__btn {
         margin-left: 30px;
         margin-bottom: 100px;
-       }
+    }
+
     .not_only__img {
         max-width: 80%;
         margin-left: 35px;
-      }
+    }
+
     .about {
         margin-bottom: 70px;
     }
 
     .about__inner {
         flex-wrap: wrap;
-        margin-left: 10px;  
+        margin-left: 10px;
     }
 
-    .about__content{
-       margin-right: 5px;
+    .about__content {
+        margin-right: 5px;
 
     }
+
     .about__title {
         font-size: 25px;
         max-width: 300px;
         margin-left: 20px;
     }
+
     .about__text_first {
         margin-bottom: 30px;
         max-width: 300px;
@@ -730,10 +740,12 @@ body {
     .about__text_second {
         max-width: 300px;
     }
+
     .about__img {
         max-width: 87%;
         margin-left: 5px;
     }
+
     .jennifer {
         display: none;
     }
@@ -745,6 +757,7 @@ body {
     .our_friends__inner {
         flex-wrap: wrap;
     }
+
     .our_friends__title {
         margin-left: 5px;
         margin-bottom: 60px;
@@ -765,6 +778,7 @@ body {
     .our_friends__arrow.right {
         margin-top: 435px;
     }
+
     .our_friends__arrow.left {
         margin-top: 435px;
 
@@ -779,7 +793,7 @@ body {
     .our_friends__btn {
         margin-bottom: 10px;
         margin-left: 10px;
-        
+
     }
 
     .help {
@@ -793,8 +807,8 @@ body {
 
     .help__items {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 45px; 
+        grid-template-columns: 1fr 1fr;
+        gap: 45px;
         width: 100%;
         max-width: 300px;
     }
@@ -840,14 +854,14 @@ body {
         margin-top: 60px;
         margin-left: 20px;
         max-width: 120%;
-        
+
     }
 
     .in_addition__name {
         margin-bottom: 5px;
     }
 
-    .in_addition__card-number{
+    .in_addition__card-number {
         font-size: 15px;
     }
 
@@ -856,11 +870,12 @@ body {
         margin-left: 30px;
 
     }
+
     .footer__img {
         margin-left: 5px;
     }
 
-    .footer__inner_title{
+    .footer__inner_title {
         font-size: 25px;
         text-align: center;
     }
