@@ -241,8 +241,10 @@ body {
 }
 
 .our_friends__slider {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 
 }
 
@@ -268,13 +270,14 @@ body {
     display: flex;
     gap: 90px;
     margin-bottom: 85px;
-
+    flex-direction: row;
 }
 
 .our_friends__item {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    flex: 0 0 calc(33.333% - 90px);
 }
 
 .our_friends__item:hover {
