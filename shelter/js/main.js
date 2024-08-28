@@ -60,6 +60,7 @@ function createSlideElement(slide) {
             <img class="our_friends__item-img" src="${animal.image}" alt="${animal.name}">
             <h3 class="our_firends__item-name">${animal.name}</h3>
         `;
+        card.addEventListener('click', () => openPopup(animal));
         slideElement.appendChild(card);
     });
     return slideElement;
@@ -101,6 +102,31 @@ function initSlider() {
     updateSlider();
 }
 
+function openPopup(animal) {
+    const popupOverlay = document.getElementById('popupOverlay');
+    const popupImage = document.getElementById('popupImage');
+    const popupName = document.getElementById('popupName');
+
+    popupImage.src = animal.image;
+    popupName.textContent = animal.name;
+
+    popupOverlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closePopup() {
+    const popupOverlay = document.getElementById('popupOverlay');
+    popupOverlay.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+document.getElementById('closeBtn').addEventListener('click', closePopup);
+document.getElementById('popupOverlay').addEventListener('click', (event) => {
+    if (event.target === document.getElementById('popupOverlay')) {
+        closePopup();
+    }
+});
+
 document.querySelector('.our_friends__arrow.left').addEventListener('click', prevSlide);
 document.querySelector('.our_friends__arrow.right').addEventListener('click', nextSlide);
 
@@ -112,3 +138,4 @@ window.addEventListener('resize', () => {
 });
 
 initSlider();
+
