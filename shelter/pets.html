@@ -39,80 +39,23 @@
     <section class="our_friends">
         <div class="container">
             <div class="our_friends__inner">
-                <h3 class="our_friends__title">
-                    Our friends who <br>
-                    are looking for a house
-                </h3>
-                <div class="our_friends__slider">
-
-                    <div class="our_friends__items">
-                        <div class="our_friends__item katrine">
-                            <img class="our_friends__item-img" src="images/pets-katrine_1.png" alt="katrine">
-                            <p class="our_firends__item-name">
-                                <span>Katrine</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                        <div class="our_friends__item jennifer">
-                            <img class="our_friends__item-img" src="images/pets-jennifer_2.png" alt="Jennifer">
-                            <p class="our_firends__item-name">
-                                <span>Jennifer</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                        <div class="our_friends__item woody">
-                            <img class="our_friends__item-img" src="images/pets-woody_3.png" alt="Woody">
-                            <p class="our_firends__item-name">
-                                <span>Woody</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                        <div class="our_friends__item sophia">
-                            <img class="our_friends__item-img" src="images/pets-sophia_4.png" alt="Sophia">
-                            <p class="our_firends__item-name">
-                                <span>Sophia</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                        <div class="our_friends__item timmy">
-                            <img class="our_friends__item-img" src="images/pets-timmy_5.png" alt="Timmy">
-                            <p class="our_firends__item-name">
-                                <span>Timmy</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                        <div class="our_friends__item charly">
-                            <img class="our_friends__item-img" src="images/pets-charly_6.png" alt="Charly">
-                            <p class="our_firends__item-name">
-                                <span>Charly</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                        <div class="our_friends__item scarlett">
-                            <img class="our_friends__item-img" src="images/pets-scarlet_7.png" alt="Scarlett">
-                            <p class="our_firends__item-name">
-                                <span>Scarlett</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                        <div class="our_friends__item freddie">
-                            <img class="our_friends__item-img" src="images/pets-freddie_8.png" alt="Freddie">
-                            <p class="our_firends__item-name">
-                                <span>Freddie</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                    </div>
-
+                <h2 class="our_friends__title">Our Friends</h2>
+                <div class="our_friends__items" id="pets-container"></div>
+                <div class="our_friends__navigation" id="pagination">
+                    <button id="first-page" disabled>&laquo;</button>
+                    <button id="prev-page" disabled>&lt;</button>
+                    <span id="current-page">1</span>
+                    <button id="next-page">&gt;</button>
+                    <button id="last-page">&raquo;</button>
                 </div>
-                <div class="our_friends__navigation">
-                    <img src="images/button_paginator_inactive_1.svg" alt="pagination">
-                    <img src="images/button_paginator_2.svg" alt="pagination">
-                    <img src="images/button_paginator_active_3.svg" alt="pagination">
-                    <img src="images/button_paginator_4.svg" alt="pagination">
-                    <img src="images/button_paginator_5.svg" alt="pagination">
-                </div>
-
+            </div>
+        </div>
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup" id="popup">
+                <button class="close-btn" id="closeBtn">&times;</button>
+                <img id="popupImage" src="" alt="">
+                <h2 id="popupName"></h2>
+                <p id="popupDescription">More detailed information about the animal.</p>
             </div>
         </div>
     </section>
