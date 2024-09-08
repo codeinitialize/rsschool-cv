@@ -21,18 +21,20 @@
                         <a href="#" class="header__logo_title">Cozy House</a>
                         <p class="header__logo_text">Shelter for pets in Boston</p>
                     </div>
-
                     <nav class="menu">
+                        <div class="burger-menu">
                         <div class="line"></div>
                         <div class="line"></div>
                         <div class="line"></div>
-                        <ul class="menu__list">
+                    </div>
+                        <ul class="menu__list" id="menu__list">
                             <li class="menu__item disabled"><a href="#" class="menu__link">About the shelter</a></li>
                             <li class="menu__item "><a href="pets.html" class="menu__link">Our pets</a></li>
                             <li class="menu__item "><a href="#help" class="menu__link">Help the shelter</a></li>
                             <li class="menu__item "><a href="#footer" class="menu__link">Contacts</a></li>
                         </ul>
                     </nav>
+                    <div id="overlay" class="overlay"></div>
                 </div>
             </div>
         </header>
@@ -91,36 +93,20 @@
                 </h3>
                 <div class="our_friends__slider">
                     <img class="our_friends__arrow left" src="images/button_arrow_left.png" alt="left">
-                    <div class="our_friends__items">
-                        <div class="our_friends__item">
-                            <img class="our_friends__item-img" src="images/pets-katrine_1.png" alt="katrine">
-                            <p class="our_firends__item-name">
-                                <span>Katrine</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                        <div class="our_friends__item jennifer">
-                            <img class="our_friends__item-img" src="images/pets-jennifer_2.png" alt="Jennifer">
-                            <p class="our_firends__item-name">
-                                <span>Jennifer</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                        <div class="our_friends__item woody">
-                            <img class="our_friends__item-img" src="images/pets-woody_3.png" alt="Woody">
-                            <p class="our_firends__item-name">
-                                <span>Woody</span>
-                            </p>
-                            <a href="#" class="our_friends__item-btn">Learn more</a>
-                        </div>
-                    </div>
+                    <div class="our_friends__items"></div> 
                     <img class="our_friends__arrow right" src="images/button_arrow_right.png" alt="right">
                 </div>
-
+                <div class="popup-overlay" id="popupOverlay">
+                    <div class="popup" id="popup">
+                        <button class="close-btn" id="closeBtn">&times;</button>
+                        <img id="popupImage" src="" alt="">
+                        <h2 id="popupName"></h2>
+                        <p id="popupDescription">More detailed information about the animal.</p>
+                    </div>
+                </div>
                 <a href="pets.html" class="our_friends__btn">Get to know the rest</a>
             </div>
         </div>
-
     </section>
     <section class="help" id="help">
         <div class="container">
