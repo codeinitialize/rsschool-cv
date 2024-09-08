@@ -1,10 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burgerMenu = document.querySelector('.burger-menu');
     const menuList = document.getElementById('menu__list');
+    const overlay = document.getElementById('overlay');
 
-    burgerMenu.addEventListener('click', () => {
+    // Функция для переключения меню
+    const toggleMenu = () => {
         menuList.classList.toggle('active');
-    });
+        burgerMenu.classList.toggle('rotate');
+        overlay.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+      };
+
+    // Открытие/закрытие меню по клику на бургер-иконку
+    burgerMenu.addEventListener('click', toggleMenu);
+  
+    // Закрытие меню по клику на overlay
+    overlay.addEventListener('click', toggleMenu);
+
+    // Закрытие меню по клику на ссылки
+    document.querySelectorAll('.menu__link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (menuList.classList.contains('active')) {
+            toggleMenu();
+          }
+        });
+      });
+
+    
 
     const animals = [
         { name: 'Charly', image: 'images/pets-charly_6.png' },
