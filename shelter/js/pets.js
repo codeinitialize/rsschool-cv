@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuList = document.getElementById('menu__list');
     const overlay = document.getElementById('overlay');
 
-    // Функция для переключения меню
+
     const toggleMenu = () => {
         menuList.classList.toggle('active');
         burgerMenu.classList.toggle('rotate');
@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('no-scroll');
       };
 
-    // Открытие/закрытие меню по клику на бургер-иконку
+
     burgerMenu.addEventListener('click', toggleMenu);
   
-    // Закрытие меню по клику на overlay
+
     overlay.addEventListener('click', toggleMenu);
 
-    // Закрытие меню по клику на ссылки
+
     document.querySelectorAll('.menu__link').forEach(link => {
         link.addEventListener('click', () => {
           if (menuList.classList.contains('active')) {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="our_friends__item-btn">Learn more</button>
             `;
             
-            // Добавляем обработчик клика на всю карточку
+
             card.addEventListener('click', () => openPopup(pet));
 
             container.appendChild(card);

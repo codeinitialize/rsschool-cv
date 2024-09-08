@@ -122,7 +122,7 @@ body {
   
   .menu__link {
     text-decoration: none;
-    color: #0a0909; /* Белый цвет для названий меню до появления бургера */
+    color: #0a0909; 
     font-size: 18px;
   }
   
