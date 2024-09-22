@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <div class="cover-container">
+            <img id="cover-img" src="" alt="Обложка трека">
+        </div>
+        <audio id="audio"></audio>
+        <div class="controls">
+            <button id="prev-btn">
+                <img src="assets/svg/backward.png" alt="Назад">
+            </button>
+            <button id="play-pause-btn" class="play">
+                <img id="play-pause-icon" src="assets/svg/play.png" alt="Play">
+            </button>
+            <button id="next-btn">
+                <img src="assets/svg/forward.png" alt="Вперёд">
+            </button>
+        </div>
+        <div class="progress-container">
+            <input type="range" id="progress-bar" value="0" max="100">
+            <div class="time">
+                <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
